@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+fieldset {
+	background:lightyellow;
+	border:10px solid yellow;
+	margin-bottom:10px;
+	width:720px;
+
+		}
+label {
+	width: 180px;
+	display:inline-block;
+	text-align: right;
+	text-align: top;
+
+	}
+
+span {
+text-align:center;
+}
+
+#checkbox {
+	width:auto;
+}
+
+
+range{
+text-align:center;
+}
+
+textarea{
+
+width:360px;
+height:50px;
+}
+
+
+</style>
+</head>
+<body>
+	<h1>Please Enter Your Details For Our Dating Website!</h1>
+
+	<form action =" https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method ="POST"  enctype="multipart/form-data">
+	<div>
+		<fieldset>
+		<legend>Your face</legend>
+		<label for ="image">Your image:</label><input type= "file"> </br>
+		<label for ="image">Image Preview:</label><img id = "preview">
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+		<legend>Your General Details</legend>
+		<label for ="name">Name</label><input type= "text" name = "name"></br>
+		<label for = "gender">Gender:</label>
+			   <input type = "radio" value="female" name ="male" >female
+			   <input type = "radio" value="female" name ="female"> male </br>
+
+		<label for ="age">Age:</label> <input type = "number" name ="age"></br>
+		<label for ="dateofBirth">Date of Birth: </label>
+			<input type = "date" name = "dateofBirth"> </br>
+		<label for ="color">Favorite Color: </label>
+			<input type = "color" name = "color"> </br>
+		<label for ="country">Which Country: </label>
+		Which Country: <select name = "country" name = "country">
+						<option>Mexico</option>
+						<option>Canada</option>
+						<option>Brazil</option>
+						<option>El Salvador</option>
+						<option>USA </option>
+						<option>China</option>
+					   </select> </br>
+
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<label for = "height">Height:</label>
+				<span>
+					Short<input type = "range" name = "height" min="0" max="100">Tall
+				<span></br>
+			<label for = "salary">Salary:</label>
+				<span>Poor<input type = "range" name = "salary" min="0" max="100">Rich
+				<span></br>
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label for = "email">Email:</label>
+				<input type = "email" name ="email"></br>
+			<label for = "usrtel">Mobile:</label>
+				<input type ="tel" name= "usrtel" maxlength ="10" ></br>
+			<label for = "adress">Adress:</label>
+				<textarea type= "text" name = "address"></textarea></br>
+
+
+			<label  for = "contactMethod" id ="checkbox">Method to Contact you:</label>
+				<input type ="checkbox" name = "email" value ="email">Email
+				<input type ="checkbox" name = "number" value = "Whatsapp">Whatsapp
+				<input type ="checkbox" name = "number" value = "In-app chat">In-app chat</br>
+
+
+
+		</fieldset>
+	</div>
+
+	<input type = "submit" name = "submit">
+
+	</form>
+
+
+</body>
+
+</html>
